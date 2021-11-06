@@ -1,0 +1,12 @@
+	Projet HUB 2020
+
+ProbaPoker	20xp		Romain Roux
+
+
+4 modes :
+
+  - Calcul proba preflop
+  - Get card(s) improving our hand
+  - Get our best hand + give hand beating our hand
+  - Calcul pot odds
+

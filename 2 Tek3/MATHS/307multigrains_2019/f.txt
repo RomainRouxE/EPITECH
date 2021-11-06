@@ -1,0 +1,6 @@
+	f1	f2	f3	f4
+oat	1	1	2	0
+wheat	0	2	1	0
+corn	1	0	0	3
+barley	0	1	1	1
+soy	2	0	0	2
