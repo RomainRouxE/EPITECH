@@ -1,0 +1,118 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+import codecs
+import binascii
+import sys
+import unittest
+
+def hextobase64(s):
+    binary_data = binascii.unhexlify(s)
+    base64_data = codecs.encode(binary_data, 'base64')
+    return base64_data.decode('utf-8')
+
+def challenge1(test):
+    try:
+        y = hextobase64(test)
+        return y
+    except:
+        sys.exit(84)
+
+print("Unit Test Challenge 1\n")
+res = hextobase64("4B")
+res = res.rstrip()
+print("Test 1")
+if res == "Sw==":
+    print("success\n")
+else:
+    print("fail\n")
+
+res = hextobase64("66")
+res = res.rstrip()
+print("Test 2")
+if res == "Zg==":
+    print("success\n")
+else:
+    print("fail\n")
+
+res = hextobase64("666f")
+res = res.rstrip()
+print("Test 3")
+if res == "Zm8=":
+    print("success\n")
+else:
+    print("fail\n")
+
+res = hextobase64("666f6f")
+res = res.rstrip()
+print("Test 4")
+if res == "Zm9v":
+    print("success\n")
+else:
+    print("fail\n")
+
+res = hextobase64("666f6f62")
+res = res.rstrip()
+print("Test 5")
+if res == "Zm9vYg==":
+    print("success\n")
+else:
+    print("fail\n")
+
+res = hextobase64("666f6f62")
+res = res.rstrip()
+print("Test 6")
+if res == "Zm9vYg==":
+    print("success\n")
+else:
+    print("fail\n")
+
+res = hextobase64("666f6f62")
+res = res.rstrip()
+print("Test 7")
+if res == "Zm9vYg==":
+    print("success\n")
+else:
+    print("fail\n")
+
+res = hextobase64("00")
+res = res.rstrip()
+print("Test 8")
+if res == "AA==":
+    print("success\n")
+else:
+    print("fail\n")
+
+res = hextobase64("0123")
+res = res.rstrip()
+print("Test 9")
+if res == "ASM=":
+    print("success\n")
+else:
+    print("fail\n")
+
+res = hextobase64("0123235341645735")
+res = res.rstrip()
+print("Test 10")
+if res == "ASMjU0FkVzU=":
+    print("success\n")
+else:
+    print("fail\n")
+
+
+res = hextobase64("AA")
+res = res.rstrip()
+print("Test 11")
+if res == "qg==":
+    print("success\n")
+else:
+    print("fail\n")
+
+
+res = hextobase64("123DBFA12ABDEE")
+res = res.rstrip()
+print("Test 12")
+if res == "Ej2/oSq97g==":
+    print("success\n")
+else:
+    print("fail\n")
