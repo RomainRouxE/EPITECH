@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dashboard meteo</title>
+  </head>
+  <body>
+    <fieldset>
+      <center>
+        <h1> Meteo</h1>
+        <form action="/weather" method="post">
+          <input name="city" type="text" class="ghost-input" placeholder="Entrer une ville" required>
+          <br><br>
+          <input type="submit" class="ghost-button" value="Afficher temperature">
+        </form>
+        <% if(weather !== null){ %>
+          <p><%= weather %></p>
+        <% } %>
+
+        <% if(error !== null){ %>
+          <p><%= error %></p>
+          <% } %>
+	  <br>
+	   <a href="http://127.0.0.1:8080/menu" target=><input type="button" value="Menu" style="width:150px"> </a>
+          </center>
+      </fieldset>
+  </body>
+</html>

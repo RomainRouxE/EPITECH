@@ -1,0 +1,15 @@
+<h1>Create New AREA</h1>
+
+<form action="/createArea/trigger" method="GET">
+    <p>select a trigger event:</p>
+    <select name="action-trigger">
+        <% triggers.forEach(function(trigger){ %>
+            <option>
+                <%= trigger.name %>
+            </option>
+        <% }) %>
+    </select>
+    <p>
+        <input type="submit" value="Next">
+    </p>
+</form>

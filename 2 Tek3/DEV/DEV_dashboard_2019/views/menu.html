@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Menu</title>
+    <body style="background-color:DarkGrey;">
+      <h1 style="text-align:center;">Menu Dashboard</h1>
+
+      <h2 style="text-align:center;">
+	<a href="http://127.0.0.1:8080/menu" target=><input type="button" value="Menu" style="width:150px"> </a>
+	<br>
+
+	<a href="http://127.0.0.1:8080/weather" target=><input type="button" value="Meteo" style="width:150px"> </a>
+	<br>
+
+	 <a href="http://127.0.0.1:8080/map" target=><input type="button" value="Map" style="width:150px"> </a>
+        <br>
+	
+	<a href="http://127.0.0.1:8080/" target=><input type="button" value="Logout" style="width:150px"> </a>
+	<br>
+	
+      </h2>
+      <h1 style="text-align:center;">
+      <div id="horloge"></div>
+      <script type="text/javascript">
+	var date = new Date();
+	var heure =date.getHours();
+	var minute=date.getMinutes();
+	var seconde=date.getSeconds();
+	var f = function() {
+	if(seconde<59)
+		seconde++;
+        else
+		{minute++;seconde=00;}
+	if(minute>59)
+	        {heure++;minute=0;}
+	  document.getElementById("horloge").textContent=heure+":"+minute+":"+seconde;
+	  setTimeout(ff, 1000);
+	  }
+	  setTimeout(f, 1000);
+      </script>
+      </h1>
+    </body>
+    <META HTTP-EQUIV="Refresh" CONTENT="3600; URL=http://127.0.0.1:8080/menu">
+  </head>
+</html>

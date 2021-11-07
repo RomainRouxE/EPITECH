@@ -1,0 +1,35 @@
+{
+    "client ": {
+	"host":  "10.41.175.2"
+    },
+    "server ": {
+	"current_time ":   ,
+	"services ": [{
+	    "name": "facebook",
+	    "actions ": [{
+		"name": "new_message_in_group",
+		"description ": "A new  message  is  posted  in the  group"
+	    }, {
+		"name": "new_message_inbox",
+		"description ": "A new  private  message  is  received  by the  user"
+	    }, {
+		"name": "new_like",
+		"description ": "The  user  gains a like  from  one of their  messages"
+	    }],
+	    "reactions ": [{
+		"name": "like_message",
+		"description ": "The  user  likes a message"
+	    }]
+	}, {
+	    "name": "google",
+	    "actions ": [{
+		"name": "Set alarm",
+		"description ": "The user set a time for an alarm"
+	    }],
+	    "reactions ": [{
+		"name": "Get an alarm reminder",
+		"description ": "The user receive an email before the at the time of the alarm"
+	    }]
+	}]
+    }
+}

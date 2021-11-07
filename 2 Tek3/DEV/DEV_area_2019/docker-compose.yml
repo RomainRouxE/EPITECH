@@ -1,0 +1,22 @@
+version: "2"
+
+services:
+  server:
+    build: ./AreaWeb
+    ports:
+    - "8080:1337"
+    restart: always
+  client_web:
+    build: ./AreaWeb/web
+    depends_on:
+      - server
+    ports:
+      - 8081:8081
+    restart: always
+    volumes:
+      - ./web :/app/
+      - /app/node_modules
+  client_mobile:
+    build: ./mobile
+    volumes:
+      - ./apk/ :/app/android/app/build/outputs/apk

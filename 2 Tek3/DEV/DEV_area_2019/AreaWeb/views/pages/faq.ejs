@@ -1,0 +1,164 @@
+<div class="article">
+    <center>
+        <h4>AREA</h4>
+    </center>
+
+    <div id="info">
+    	 <h3>Information general</h3>
+	 <ul>
+            <li>AREA: projet TEK3</li>
+	    <li>Taille de groupe: 6</li>
+	    <li>Repertoire: DEV_area_2019</li>
+	    <li>Droit de ramassage: Ramassage tek</li>
+	    <li>Langage: Node JS, Kotlin</li>
+            <li>Compilation: docker-compose build && docker-compose up</li>
+	 </ul>
+    </div>
+
+    <div id="authors">
+        <h3>Authors</h3>
+        <p>The Area project has been made available thanks to the following contributors:</p>
+        <ul>
+            <li>Vanissa BALAKICHENANE - Serveur</li>
+	    <li>Alexandru BURLA - Serveur</li>
+            <li>Tom CHAMBOREDON - Mobile</li>
+	    <li>Lionel DE-SOUSA - Web</li>
+            <li>Arthur LAMBERT - Mobile</li>
+	    <li>Romain ROUX - Web</li>
+        </ul>
+    </div>
+    
+    <div id="deployment">
+        <h3>Deploiement</h3>
+        <p>Pour lancer l'application de facon automatique utilisé: docker-compose build && docker-compose up<br>
+        Pour lancer l'application de facon manuelle: npm install && sails lift</p>
+        <p>Chaque partie du projet (Serveur, web, mobile) a son propre Dockerfile et docker-compose.yml.</p>
+    </div>
+    
+    <div id="technologies">
+        <h3>Technologies</h3>
+        <p>This AREA has been built using Sails JS v1.2.3<br>
+	Sails makes it easy to build custom, enterprise-grade Node.js apps.</p>
+    </div>
+    
+    <div id="technologies2">
+        <h3>Web Technologies</h3>
+        <p>The front-end website has been built using ReactJS 16.<br>
+	React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies.</p>
+    </div>
+    
+    <div id="technologies3">
+        <h3>Mobile Technologies</h3>
+        <p>The mobile application has been built using Kotlin.</p>
+    </div>
+
+    <div id="service">
+        <h3>oAuth</h3>
+	<ul>
+            <li>Google</li>
+            <li>Facebook</li>
+            <li>Github</li>
+	    <li>Spotify</li>
+	</ul>
+    </div>
+
+    <div id="action/reaction">
+        <h3>Action - Reaaction</h3>
+	<p>1- Envoi un email de rappel sur gmail a l'heure souhaite.<br>
+	   2- Retweet un tweet mis en favoris.</p>
+    </div>
+
+    <div id="architecture">
+	<h3>Architecture</h3>
+        <p>api/<br>
+		├── controllers/<br>
+		│  ├── account/<br>
+		│  ├── dashboard/<br>
+		│  └── entrance/<br>
+		├── helpers/<br>
+		├── hooks/<br>
+		└── models/<br>
+	   config/<br>
+		├── env/<br>
+		├── locales/<br>
+		└── passport/<br>
+	   views/
+</p>
+    </div>
+
+    <div id="endpoint">
+        <h3>Endpoint</h3>
+	<style>
+	table {
+	    border-collapse: collapse;
+	    }
+
+	td, th {
+	    border: 1px solid black;
+	    }
+	</style>
+
+	<table>
+	   <tr>
+		<th>Path</th>
+		<th>Parameter</th>
+		<th>Need login</th>
+	   </tr>
+
+	   <tr>
+	        <td>/register</td>
+		<td>email-first name-name-pw</td>
+		<td>no</td>
+	   </tr>
+   
+	   <tr>
+		<td>/login</td>
+		<td>email-pw</td>
+		<td>no</td>
+   	  </tr>
+
+	  <tr>
+                <td>/doc</td>
+                <td> - </td>
+                <td>no</td>
+          </tr>
+
+	  <tr>
+                <td>/about.json</td>
+                <td>email-pw</td>
+                <td>no</td>
+          </tr>
+
+	  <tr>
+                <td>/welcome</td>
+                <td> - </td>
+                <td>yes</td>
+          </tr>
+
+	  <tr>
+                <td>/welcome/hello</td>
+		<td> - </td>
+                <td>yes</td>
+          </tr>
+
+	  <tr>
+                <td>/createArea/new</td>
+                <td> - </td>
+                <td>yes</td>
+          </tr>
+	</table>
+    </div>
+
+    <br>
+
+    <div id="mobile">
+        <h3>Mobile</h3>
+        <ul>
+            <li>Connexion au seveur</li>
+            <li>Definition des actions/réactions</li>
+            <li>Deconnexion</li>
+            <li>Autentifications Google et Imgur</li>
+        </ul>
+    </div>
+
+</div>

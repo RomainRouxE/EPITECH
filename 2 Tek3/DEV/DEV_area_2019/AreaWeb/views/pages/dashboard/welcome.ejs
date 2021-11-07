@@ -1,0 +1,50 @@
+<div id="welcome">
+  <div class="container">
+  <center>
+    <h1>Bienvenue sur notre AREA !</h1>
+    <hr/>
+    <p>Vous pouvez ici vous log sur différents services.</p>
+    </center>
+    <div class="buttons">
+    <center>
+      <p><a class="btn btn-info" href="/api/v1/auth/google">Google</a></p>
+      <p><a class="btn btn-info" href="/api/v1/auth/Facebook">Facebook</a></p>
+      <p><a class="btn btn-info" href="/api/v1/auth/github">Github</a></p>
+      <p><a class="btn btn-info" href="/spotify/callback">Spotify</a></p>
+
+    <p><a class="btn btn-info" href="/createArea/new">Create a new AREA</a></p>
+
+      <button class="btn btn-outline-info ml-2" @click="clickOpenExampleModalButton()">Services</button>
+      </center>
+    </div>
+  </div>
+
+  <router-view></router-view>
+
+<modal class="example-modal" v-if="modal==='example'" @close="closeExampleModal()" v-cloak>
+    <div class="modal-header">
+      <h2 class="modal-title">Services</h2>
+      <hr/>
+      <button type="button" class="modal-close-button" data-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+        <form action="/welcome/hello/nbmails">
+   	      <div>
+		<label for="appt-time3">Veuillez choisir l'heure pour notifier vos emails non lus : <br> </label>
+       		       <input id="appt-time3" type="time" name="appt-time2" min="00:00" max="24:00" required>
+       		       <span class="validity"></span>
+   		</div>
+		<div>
+			<input type="submit" value="Envoyer le formulaire">
+       			<!--<p><a class="btn btn-info" href="/welcome/hello/nbmails">Envoyer le formulaire</a></p>-->
+		</div>
+	</form>
+
+    </div>
+    <div class="modal-footer flex-row-reverse justify-content-between">
+      <button type="button" data-dismiss="modal" class="btn btn-info">Close</button>
+      <button type="button" data-dismiss="modal" class="btn btn-outline-info">Cancel</button>
+    </div>
+  </modal>
+</div>
+<%- /* Expose locals as `window.SAILS_LOCALS` :: */ exposeLocalsToBrowser() %>

@@ -1,0 +1,12 @@
+<% opts.forEach(function(opt){ %>
+    <% if (opt.name == "search hashtag") { %>
+    <form action="/twitter/searchHashtag" method="GET">
+        <input type="text" name="trigger-info" placeholder="Which hashtag to search?">
+        <p>
+            <input type="submit" value="Next">
+        </p>
+    </form>
+    <% } else { %>
+        <h2>NONE</h2>
+    <% } %>
+<% }) %>

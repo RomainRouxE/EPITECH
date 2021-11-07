@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">AREA</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">AREA</string>
+    <string name="nav_header_subtitle">Action REAction</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="googleSignIn">Google Sign In</string>
+    <string name="imgurSignIn">Imgur Sign In</string>
+    <string name="areaSignIn">AREA Sign In</string>
+    <string name="areaSignOut">AREA Sign Out</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Action Reaction</string>
+    <string name="menu_slideshow">Google</string>
+    <string name="server_client_id">"863600689158-6tajhncgt2g6id5kb0teahenhvfg6a4a"</string>
+    <string name="server_url">http://10.41.167.39:1337/</string>
+
+    <string name="Action_prompt">Action</string>
+    <string name="Reaction_prompt">Reaction</string>
+    <string name="Submit_button">Submit</string>
+    <string-array name="Action_arrays">
+        <item>Action1</item>
+        <item>Action2</item>
+    </string-array>
+    <string-array name="Reaction_arrays">
+        <item>Reaction1</item>
+        <item>Reaction2</item>
+    </string-array>
+    <string name="serveur_prompt">URL serveur</string>
+    <string name="serveur_login">Login</string>
+    <string name="serveur_mdp">Password</string>
+</resources>
