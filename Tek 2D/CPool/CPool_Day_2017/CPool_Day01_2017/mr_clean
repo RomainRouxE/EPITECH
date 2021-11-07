@@ -1,0 +1,2 @@
+#!/bean/bash
+find . -name "*~" -delete -o "#*#" -delete
