@@ -1,0 +1,17 @@
+-I/home/tommik/CPP_babel_2018/include/server
+-I/home/tommik/CPP_babel_2018/include/common
+-I/home/tommik/CPP_babel_2018/include/client
+-I/home/tommik/.conan/data/Qt/5.11.2/bincrafters/stable/package/092e5212177a716c7f4082b9b05c5650f6e409d9/include
+-I/home/tommik/.conan/data/portaudio/v190600.20161030/bincrafters/stable/package/d50a0d523d98c15bb147b18fa7d203887c38be8b/include
+-I/home/tommik/.conan/data/opus/1.2.1/bincrafters/stable/package/d50a0d523d98c15bb147b18fa7d203887c38be8b/include
+-I/home/tommik/.conan/data/opus/1.2.1/bincrafters/stable/package/d50a0d523d98c15bb147b18fa7d203887c38be8b/include/opus
+-I/home/tommik/.conan/data/boost/1.68.0/conan/stable/package/d6cb600df9137cb7943d00f26e402be306584995/include
+-I/home/tommik/.conan/data/bzip2/1.0.6/conan/stable/package/d50a0d523d98c15bb147b18fa7d203887c38be8b/include
+-I/home/tommik/.conan/data/zlib/1.2.11/conan/stable/package/6ae331b72e7e265ca2a3d1d8246faf73aa030238/include
+-I$<$<CONFIG:Release>:>
+-I$<$<CONFIG:RelWithDebInfo>:>
+-I$<$<CONFIG:MinSizeRel>:>
+-I$<$<CONFIG:Debug>:>
+-o
+/home/tommik/CPP_babel_2018/include/client/moc_UDPSocket.cpp
+/home/tommik/CPP_babel_2018/include/client/UDPSocket.hpp
